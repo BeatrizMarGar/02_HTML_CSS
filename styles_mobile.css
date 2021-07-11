@@ -1,4 +1,3 @@
-
 @media (min-width:480px) and (max-width: 1280px) {
 
 body{
@@ -36,7 +35,6 @@ body{
 
 }
 
-/* cerrado */
 .nav_menu {
   display: none;
 }
@@ -45,7 +43,6 @@ body{
   height: 9%;
 }
 
-/* abierto */
 #burger-checkbox:checked ~ .nav_menu {
   list-style: none;
   margin: 0;
@@ -103,8 +100,8 @@ nav{
 }
 
 .nav_cont{
-height: 800%;
-position: relative;
+  height: 800%;
+  position: relative;
 }
 
 .nav_logo{
@@ -113,11 +110,10 @@ position: relative;
 }
 
 a > img{
-position: relative;
-height: 100%;
-width: 100%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-
 
 main > h2{
   margin: 1%;
@@ -131,7 +127,6 @@ main > h2{
 footer{
    position: relative;
   height: 5vh;
-  /* background-color: black; */
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   font-style: italic;
@@ -142,7 +137,7 @@ footer{
 }
 
 p{
-    margin: 0%;
+  margin: 0%;
 }
 
 .min_vid{
@@ -300,7 +295,6 @@ main{
   top: -14%;
 }
 
-
 #slider #circ_diapo_1:checked ~ .dots_nav label#fill_1,
 #slider #circ_diapo_2:checked ~ .dots_nav label#fill_2,
 #slider #circ_diapo_3:checked ~ .dots_nav label#fill_3,
@@ -318,12 +312,9 @@ main{
     transform: scale(0);
 }
 
-
-
 .cont_video > li:not(.VIDEO_FAV, .VIDEO_TITLE, .VIDEO_CAPTURE) > p{
 margin-left: 2%;
 }
-
 
 .cont_video:hover > li{
     opacity: 1;
@@ -352,17 +343,14 @@ article > ul{
   width: 0px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
@@ -375,7 +363,6 @@ article > ul{
 
 .VIDEO_FAV > input{
   display: none;
-  /*transform: scale(0)*/
 }
 
 .navbar_menu{
@@ -397,7 +384,7 @@ article > ul{
   font-weight: 800;
 }
 
-/**/
+/*__________________________________________PAG_DETALLE.HTML__________________________________________*/
 
 .card_cont > ul{
   position: relative;
@@ -440,12 +427,12 @@ article > ul{
 }
 
 #vid_trailler{
-    margin: 2%;
-    position: relative;
-    display: none;
-    width: 100%;
-    transition: 0.5s;
-    margin-top: 9%;
+  margin: 2%;
+  position: relative;
+  display: none;
+  width: 100%;
+  transition: 0.5s;
+  margin-top: 9%;
 }
 
 #trailler_check:checked ~ #vid_trailler{
@@ -523,7 +510,7 @@ article > ul{
   padding: 1%;
 }
 
-/*CSS FORMULARIO*/
+/*_________________________________________CSS FORMULARIO_________________________________________*/
 
 #tit_web{
   text-align: center;
@@ -598,33 +585,6 @@ article > ul{
   border: none;
 }
 
-/*
-#btn_submit:after{
-  content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 320%;
-    width: 120%;
-    background: #78c7d2;
-    z-index: 1;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: translateX(-98%) translateY(-25%) rotate(
-45deg
-);
-    transform: translateX(-98%) translateY(-25%) rotate(
-45deg
-);
-}
-
-#btn_submit:hover:after{
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  z-index: 2;
-
-}
-*/
 #btn_submit > span{
   font-size: x-large;
 }
@@ -638,7 +598,7 @@ article > ul{
   margin-bottom: 10%;
 }
 
-/*404*/
+/*_________________________________________PÁGINA 404_________________________________________*/
 
 .fail_text{
   position: absolute;
