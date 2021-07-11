@@ -1,11 +1,3 @@
-:root {
-  --azul_main: #002b44;
-  --azul_sec: #004972;
-  --azul_light: #016d9c;
-  --blanco: #ede5ce;
-  --rosa: #c7839c;
-  --grad_rosa: rgba(199, 131, 156, 0.5);
-}
 
 @media (min-width:480px) and (max-width: 1280px) {
 
@@ -25,9 +17,9 @@ body{
 
 .burger-label {
   position: absolute;
-  top: .3rem;
+  top: 3.5%;
   left: 0;
-  width: 2rem;
+  transform: scale(2);
   z-index: 10;
   height: 2rem;
 }
@@ -80,7 +72,7 @@ body{
 
 nav{
 	position: relative;
-  height: 3vh;
+  height: 5vh;
   width: 100vw;
   background-color: lightblue;
   margin: 0;
@@ -128,17 +120,25 @@ width: 100%;
 
 
 main > h2{
-  margin: 0%;
+  margin: 1%;
   position: relative;
   padding: 2%;
+  text-shadow: -5px 10px 18px var(--azul_light);
+  font-size: 3rem;
   text-align: center;
 }
 
 footer{
    position: relative;
-  height: 8vh;
+  height: 5vh;
   /* background-color: black; */
   background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-style: italic;
+  color: gray;
+  padding: 2%;
+  font-size: 1.3rem;
+  text-align: center;
 }
 
 p{
@@ -179,8 +179,8 @@ main{
     "CONT_5 CONT_6"
     "CONT_7 CONT_8"; 
 }
-.TYPE_1 { grid-area: TYPE_1; }
-.TYPE_2 { grid-area: TYPE_2; }
+.TYPE_1 { grid-area: TYPE_1; font-size: 2rem;}
+.TYPE_2 { grid-area: TYPE_2; font-size: 2rem;}
 .CONT_1 { grid-area: CONT_1; }
 .CONT_2 { grid-area: CONT_2; }
 .CONT_3 { grid-area: CONT_3; }
@@ -220,6 +220,7 @@ main{
   height: 50vh;
   width: 100%;
   overflow: hidden;
+  margin-top: -8%;
 }
 
 #slider .diapos{
@@ -246,9 +247,11 @@ main{
 }
 
 .diapo > h3{
-  top: 0%;
+
+  top: 20%;
   position: relative;
   z-index: 5;
+  font-size: 4rem;
   width: 100vw;
 }
 
@@ -367,6 +370,7 @@ article > ul{
 .VIDEO_FAV > input:checked ~ label > span{
   -webkit-filter: grayscale(0%); 
 	filter: grayscale(0%); 
+  color:red;
 }
 
 .VIDEO_FAV > input{
@@ -521,6 +525,27 @@ article > ul{
 
 /*CSS FORMULARIO*/
 
+#tit_web{
+  text-align: center;
+  margin-bottom: 30%;
+  font-size: 7rem;
+  z-index: 10;
+}
+
+#logo_acceso{
+  position: absolute;
+  align-items: center;
+  top: 17%;
+  left: 29%;
+  opacity: 0.1;
+}
+
+#password{
+  font-size: 2rem;
+  text-align: right;
+  margin-top: 17%;
+}
+
 #body_form{
   background-color: #002b44;
   top: 0%;
@@ -553,7 +578,6 @@ article > ul{
 
 #form > h1{
   margin: 0;
-  font-size: xxx-large;
   margin-bottom: 14%;
 }
 
@@ -614,5 +638,73 @@ article > ul{
   margin-bottom: 10%;
 }
 
+/*404*/
+
+.fail_text{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  opacity: 0.1;
+  font-size: 35rem;
+  justify-content: center;
+  top: 10%;
+  animation: blur_404 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+#body_404{
+  overflow: hidden;
+}
+
+@keyframes blur_404 {
+  0% {filter: blur(8px);}
+  50% {filter: blur(50px);}
+  100% {filter: blur(8px);}
+}
+
+.fail_article{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.fail_article >h1{
+  
+  font-size: 8rem;
+  margin-bottom: 3%;
+}
+
+.fail_article > h2{
+  margin: 5%;
+    margin-top: 8%;
+    font-size: 4rem;
+}
+
+.fail_article > h3{
+  margin: 5%;
+  font-size: 3rem;
+}
+
+.fail_btn{
+  position: relative;
+  height: 10vh;
+  width: 40%;
+  background-color: var(--azul_light);
+  margin-top: 3%;
+  margin-left: 30%;
+  color: white;
+  box-shadow: 0 5px 15px rgb(199 131 156 / 15%);
+  overflow: hidden;
+  border: 20px;
+  font-size: xxx-large;
+}
+
+#fail{
+  height: 70vh;
+}
 
 }

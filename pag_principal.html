@@ -2,8 +2,9 @@
 <html>
 <head>
   	<meta charset="utf-8">
-  	<title>HTML</title>
+  	<title>HBEA - PAGINA PRINCIPAL</title>
 	<link rel="stylesheet" href="styles_mobile.css">
+	<link rel="stylesheet" href="styles_common.css">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +20,17 @@
 		   
             <ul class='nav_menu'>
                 <li class='nav_logo'>
-                	<a href='/'>
+                	<a href='/pag_principal.html'>
 						<img src='img/logo.png' alt='Logo'>
 					 <!-- <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
                 	</a>
                 </li>
                 <li class='navbar-item'>
-                  <a href='pag_principal.html'>Inicio</a></li>
+                    <form action="/pag_principal.html" method="GET">
+                        <button class='btn'action="submit"></button>
+                        <input type='text' placeholder='Título, protagonistas...'>
+                    </form>
+                </li>
                 <li class='navbar-item'>
                 	<a href='pag_principal.html#slider'>NOVEDADES</a>
                 </li>
@@ -34,12 +39,6 @@
                 </li>
                 <li class='navbar-item'>
                 	<a href='pag_principal.html#series'>SERIES</a>
-                </li>
-                <li class='navbar-item'>
-                    <form action="/" method="GET">
-                        <button class='btn'action="submit"></button>
-                        <input type='text' placeholder='Título, protagonistas...'>
-                    </form>
                 </li>
                 <li class='navbar-item'>
                 	<a href='pag_acceso.html'>CERRAR SESIÓN</a>
@@ -57,23 +56,23 @@
 			<input type="radio" name="slides" id="circ_diapo_5">
 				<ul class="diapos">
 					<li class="diapo">
-						<h3>TITULO</h3>
+						<h3>Estreno de DARK INSIDE V</h3>
 						<img src="img/pexels_miedo.jpg">
 					</li>
 					<li class="diapo">
-						<h3>TITULO2</h3>
+						<h3>Nueva temporada de ALIENS VS COWS</h3>
 						<img src="img/pexels_alien.jpg">
 					</li>
 					<li class="diapo">
-						<h3>TITULO3</h3>
+						<h3>CIUDADES ESPACIALES, el primer viaje comercial</h3>
 						<img src="img/pexels_pan.jpg">
 					</li>
 					<li class="diapo">
-						<h3>TITULO</h3>
+						<h3>CAP.5: CONECTA CON LA NATURALEZA</h3>
 						<img src="img/pexels_nubes.jpg">
 					</li>
 					<li class="diapo">
-						<h3>TITULO</h3>
+						<h3>APRENDE A PILOTAR EN TRES SENCILLOS TUTORIALES</h3>
 						<img src="img/pexels_aviacion.jpg">
 					</li>
 				</ul>
@@ -85,7 +84,7 @@
 				<label for="circ_diapo_5" id="fill_5"></label>
 			</div>
 		</div>
-		<h2>¿QUÉ QUIERES VER HOY?</h2>
+		<h2>¿Qué quieres ver hoy?</h2>
 		<section class="container">
 			<h3 id="documentales" class="TYPE_1">TUS DOCUMENTALES</h3>
 			<h3 id="series" class="TYPE_2">TUS SERIES</h3>
@@ -315,6 +314,8 @@
 		  
 		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<p>Trabajo realizado por Beatriz Martín para la práctica de HTML y CSS del Bootcamp desarrollo FullStack Web de KeepCoding durante el mes de julio de 2021</p>
+	</footer>
 </body>
 </html>

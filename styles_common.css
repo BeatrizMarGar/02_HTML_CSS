@@ -1,0 +1,44 @@
+:root {
+    --azul_main: #002b44;
+    --azul_sec: #004972;
+    --azul_light: #016d9c;
+    --blanco: #ede5ce;
+    --rosa: #c7839c;
+    --grad_rosa: rgba(199, 131, 156, 0.5);
+    --grad_azul: rgba(0, 43, 68, 0.5);
+  }
+  
+  ul{
+    list-style-type: none;
+    color: white;
+  }
+  
+  li > a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-item > form{
+    display: flex;
+  }
+  
+  .VIDEO_TITLE > p{
+    text-shadow: 2px 2px 2px #000000;
+    margin-top: 2%;
+    text-align: center;
+  }
+  
+  .diapo > h3{
+    text-shadow: 4px 4px 12px #000000;;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .href_res{
+    color: var(--azul_light);
+    font-weight: 800;
+  }
+  

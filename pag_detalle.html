@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+    <title>HBEA - PAGINA DETALLE</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_mobile.css">
+    <link rel="stylesheet" href="styles_common.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -18,13 +21,17 @@
 		   
             <ul class='nav_menu'>
                 <li class='nav_logo'>
-                	<a href='/'>
+                	<a href='/pag_principal.html'>
 						<img src='img/logo.png' alt='Logo'>
 					 <!-- <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
                 	</a>
                 </li>
                 <li class='navbar-item'>
-                  <a href='pag_principal.html'>Inicio</a></li>
+                    <form action="/pag_principal.html" method="GET">
+                        <button class='btn'action="submit"></button>
+                        <input type='text' placeholder='Título, protagonistas...'>
+                    </form>
+                </li>
                 <li class='navbar-item'>
                 	<a href='pag_principal.html#slider'>NOVEDADES</a>
                 </li>
@@ -33,12 +40,6 @@
                 </li>
                 <li class='navbar-item'>
                 	<a href='pag_principal.html#series'>SERIES</a>
-                </li>
-                <li class='navbar-item'>
-                    <form action="/" method="GET">
-                        <button class='btn'action="submit"></button>
-                        <input type='text' placeholder='Título, protagonistas...'>
-                    </form>
                 </li>
                 <li class='navbar-item'>
                 	<a href='pag_acceso.html'>CERRAR SESIÓN</a>
