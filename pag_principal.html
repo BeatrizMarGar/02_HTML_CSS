@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<title>HTML</title>
+	<link rel="stylesheet" href="styles_mobile.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class='nav_cont'>
+			
+			<label for="burger-checkbox" class="burger-label">
+			</label>
+			<input type="checkbox" name="check" id="burger-checkbox">
+		   
+            <ul class='nav_menu'>
+                <li class='nav_logo'>
+                	<a href='/'>
+						<img src='img/logo.png' alt='Logo'>
+					 <!-- <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                	</a>
+                </li>
+                <li class='navbar-item'>
+                  <a href='pag_principal.html'>Inicio</a></li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#slider'>NOVEDADES</a>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#documentales'>DOCUMENTALES</a>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#series'>SERIES</a>
+                </li>
+                <li class='navbar-item'>
+                    <form action="/" method="GET">
+                        <button class='btn'action="submit"></button>
+                        <input type='text' placeholder='Título, protagonistas...'>
+                    </form>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_acceso.html'>CERRAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+	<main>
+		<h2>Novedades destacadas</h2>
+		<div id="slider">
+			<input type="radio" name="slides" id="circ_diapo_1" checked>
+			<input type="radio" name="slides" id="circ_diapo_2">
+			<input type="radio" name="slides" id="circ_diapo_3">
+			<input type="radio" name="slides" id="circ_diapo_4">
+			<input type="radio" name="slides" id="circ_diapo_5">
+				<ul class="diapos">
+					<li class="diapo">
+						<h3>TITULO</h3>
+						<img src="img/pexels_miedo.jpg">
+					</li>
+					<li class="diapo">
+						<h3>TITULO2</h3>
+						<img src="img/pexels_alien.jpg">
+					</li>
+					<li class="diapo">
+						<h3>TITULO3</h3>
+						<img src="img/pexels_pan.jpg">
+					</li>
+					<li class="diapo">
+						<h3>TITULO</h3>
+						<img src="img/pexels_nubes.jpg">
+					</li>
+					<li class="diapo">
+						<h3>TITULO</h3>
+						<img src="img/pexels_aviacion.jpg">
+					</li>
+				</ul>
+			<div class="dots_nav">
+				<label for="circ_diapo_1" id="fill_1"></label>
+				<label for="circ_diapo_2" id="fill_2"></label>
+				<label for="circ_diapo_3" id="fill_3"></label>
+				<label for="circ_diapo_4" id="fill_4"></label>
+				<label for="circ_diapo_5" id="fill_5"></label>
+			</div>
+		</div>
+		<h2>¿QUÉ QUIERES VER HOY?</h2>
+		<section class="container">
+			<h3 id="documentales" class="TYPE_1">TUS DOCUMENTALES</h3>
+			<h3 id="series" class="TYPE_2">TUS SERIES</h3>
+		  <article class="CONT_1">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_ciudad.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>LA GRAN NUBE</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>1996</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>El humo de los cigarros se acumula en la atmósfera de una gran ciudad
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>4⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_1"/>	
+				  	<label for="miCheck_1" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+
+		  <article class="CONT_2">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_medusas.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>CARRERA ENTRE MEDUSAS</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>1988</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>Las medusas dominarán los océanos en 2050, alimentándose de tiburones.
+						  <br>
+						<a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>5⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_2"/>	
+				  	<label for="miCheck_2" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_3">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_mural.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>LOWPOLY ART</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>1999</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>Documental sobre la incapacidad de trazar curvas
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>2⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_3"/>	
+				  	<label for="miCheck_3" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_4">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_pintura.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>NEÓN</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>2003</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>¿Será la pintura de neón tóxica para los humanos?
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>3.5⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_4"/>	
+				  	<label for="miCheck_4" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_5">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_señora.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>ASESINATO MERCANTIL</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>2010</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>La protagonista mata con la mirada
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>1⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_5"/>	
+				  	<label for="miCheck_5" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_6">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_cuadro.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>¿PINTAMOS?</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>2007</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>Cinco pintores compiten por pintar una cocina
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>4⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_6"/>	
+				  	<label for="miCheck_6" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_7">
+		  	<ul class="cont_video">
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_buho.jpg">
+				</li>
+				  <li class="VIDEO_TITLE">
+				  	<p>LARRY PLOTTER</p>
+				  </li>
+				  <li class="VIDEO_DATE">
+				  	<p>1990</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>Un buho decide convertirse en mago en la escuela Owlards
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>3⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_7"/>	
+				  	<label for="miCheck_7" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		  <article class="CONT_8">
+		  	<ul class="cont_video">
+				  <li class="VIDEO_TITLE">
+				  	<p>STRANGER PEOPLE</p>
+				  </li>
+		  		<li class="VIDEO_CAPTURE">
+					<img class="min_vid" src="img/pexels_tv.jpg">
+				</li>
+				  <li class="VIDEO_DATE">
+				  	<p>1970</p>
+				  </li>
+				  <li class="VIDEO_DESCRIPTION">
+				  	<p>En el pueblo ficticio de Jawkins, Indiana, un niño llamado Bill Wyers desaparece.
+						<br>
+					  <a class="href_res" href="pag_detalle.html">VER EL TRAILLER</a></p>
+				  </li>
+				  <li class="VIDEO_CALIFICATION">
+				  	<p>3⭐</p>
+				  </li>
+				  <li class="VIDEO_FAV">
+					<input type="checkbox" id="miCheck_8"/>	
+				  	<label for="miCheck_8" class="fav">
+				  		<span alt="botón corazón para seleccionar este video como favorito">♥</span>
+				  	</label>
+				  </li>
+		  	</ul>
+		  </article>
+		  
+		</section>
+	</main>
+	<footer></footer>
+</body>
+</html>

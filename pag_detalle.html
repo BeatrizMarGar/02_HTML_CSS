@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<title></title>
+</head>
+<body id="body_resumen">
+	<nav>
+		<div class='nav_cont'>
+			
+			<label for="burger-checkbox" class="burger-label">
+			</label>
+			<input type="checkbox" name="check" id="burger-checkbox">
+		   
+            <ul class='nav_menu'>
+                <li class='nav_logo'>
+                	<a href='/'>
+						<img src='img/logo.png' alt='Logo'>
+					 <!-- <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>-->
+                	</a>
+                </li>
+                <li class='navbar-item'>
+                  <a href='pag_principal.html'>Inicio</a></li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#slider'>NOVEDADES</a>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#documentales'>DOCUMENTALES</a>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_principal.html#series'>SERIES</a>
+                </li>
+                <li class='navbar-item'>
+                    <form action="/" method="GET">
+                        <button class='btn'action="submit"></button>
+                        <input type='text' placeholder='Título, protagonistas...'>
+                    </form>
+                </li>
+                <li class='navbar-item'>
+                	<a href='pag_acceso.html'>CERRAR SESIÓN</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+	<main id="main_resumen">
+        <section class="card_cont">
+            <ul id="resumen">
+                <li><h1>STRANGER PEOPLE</h1></li>
+                <li><p id="text_res">La historia arranca durante la década de los 70, en el pueblo ficticio de Jawkins, Indiana, cuando un niño llamado Bill Wyers desaparece misteriosamente, hecho que destapa los extraños sucesos que tienen lugar en la zona, producto de una serie de experimentos que realiza el gobierno en un laboratorio científico lejano</p></li>
+                <li>
+                    <p class="italic_text">Año 2016, Estados Unidos</p>
+                </li>
+                <li>
+                  <p class="italic_text">Winona Ryder, David Harbour, Matthew Modine, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Noah Schnapp, Cara Buono, Joe Keery, Shannon Purser, Rob Morgan, John Reynolds, Joe Chrest, Ross Partridge, Mark Steger</p></li>
+                <li id="card_trailler">
+                    <input type="checkbox" id="trailler_check">
+                    <label for="trailler_check" id="video_label">
+                        <span id="ver_trailler">VER EL TRAILER ▶️</span>
+                        <span id="ocultar_trailler">OCULTAR EL TRAILLER 🔙</span></label>
+                    <br>
+                    <video id="vid_trailler" controls src="video/trailler.mp4"></video>
+                </li>
+            </ul>
+        </section>
+        <section class="container_resumen">   
+            <h3 class="SUGERENCIA_TEXT">CONTENIDOS SIMILARES</h3>
+            <article class="SUGERENCIA_1">
+                <ul>
+                  <a href="pag_principal.html">
+                    <li class="VIDEO_SUG">
+                        <img class="min_vid" src="img/pexels_pintura.jpg">
+                    </li>
+                      <li class="SUG_TITLE">
+                        <p>NEÓN</p>
+                      </li>
+                      <li class="VIDEO_DATE">
+                        <p>2003</p>
+                      </li>
+                    </a>
+                </ul>
+              </article>
+
+              <article class="SUGERENCIA_2">
+                <ul>                  
+                  <a href="pag_principal.html">
+                    <li class="VIDEO_SUG">
+                        <img class="min_vid" src="img/pexels_mural.jpg">
+                    </li>
+                      <li class="SUG_TITLE">
+                        <p>LOWPOLY ART</p>
+                      </li>
+                      <li class="VIDEO_DATE">
+                        <p>1999</p>
+                      </li>
+                    </a>
+                </ul>
+              </article>
+              
+              <article class="SUGERENCIA_3">
+                <ul>
+                  <a href="pag_principal.html">
+                    <li class="VIDEO_SUG">
+                        <img class="min_vid" src="img/pexels_medusas.jpg">
+                    </li>
+                      <li class="SUG_TITLE">
+                        <p>CARRERA ENTRE MEDUSAS</p>
+                      </li>
+                      <li class="VIDEO_DATE">
+                        <p>1988</p>
+                      </li>
+                      </a>
+                </ul>
+              </article>
+              
+              <article class="SUGERENCIA_4">
+                <ul>
+                  <a href="pag_principal.html">
+                    <li class="VIDEO_SUG">
+                        <img class="min_vid" src="img/pexels_ciudad.jpg">
+                    </li>
+                      <li class="SUG_TITLE">
+                        <p>LA GRAN NUBE</p>
+                      </li>
+                      <li class="VIDEO_DATE">
+                        <p>1996</p>
+                      </li>
+                    </a>
+                </ul>
+          </article>
+        </section>
+    </main>
+</body>
+</html>
